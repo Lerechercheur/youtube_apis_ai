@@ -1,5 +1,6 @@
 from youtube_transcript_api import YouTubeTranscriptApi
 import re
+from flask import jsonify, request
 
 def get_youtube_video_id(url):
     # Extrait l'ID de la vidéo à partir de l'URL
